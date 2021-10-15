@@ -16,6 +16,8 @@ public class Point3D extends Point2D {
 	// methode
 	public void translater(int dX, int dY, int dZ) {
 		super.translater(dX, dY);
+		// ou 
+		// this.translater(dX, dY);
 		this.z += dZ;
 	}
 
@@ -29,8 +31,6 @@ public class Point3D extends Point2D {
 
 	@Override
 	public String toString() {
-		return "Point3D [z=" + z + ", x=" + x + ", y=" + y + "]";
+		return "Point3D [z=" + z + ", x=" + this.getX() + ", y=" + this.getY() + "]";
 	}
-
-	
 }

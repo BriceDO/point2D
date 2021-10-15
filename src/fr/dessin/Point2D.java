@@ -2,8 +2,8 @@ package fr.dessin;
 
 public class Point2D {
 
-	static int compteur;
-	int x, y;
+	private static int compteur;
+	private int x, y;
 	
 	// Constructeurs
 	public Point2D() {
@@ -11,7 +11,7 @@ public class Point2D {
 	}
 
 	public Point2D(int x, int y) {
-		compteur ++;
+		this();
 		this.x = x;
 		this.y = y;
 	}
@@ -25,7 +25,6 @@ public class Point2D {
 	
 	// Méthode getCompteur() static
 	public static int getCompteur(){
-		System.out.println("nombre d'instance créé : "+ compteur);
 		return compteur;
 	}
 	

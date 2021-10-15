@@ -16,7 +16,10 @@ public class Main {
 		Point3D p3 = new Point3D(15, 5, 20);
 		System.out.println(p3);
 		
-		Point2D.getCompteur();
+		System.out.println(Point2D.getCompteur());
+		
+		p3.translater(10, 15, 2);
+		;
 
 	}
 
